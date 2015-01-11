@@ -83,7 +83,7 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB0-CA-dSm">
-                                        <rect key="frame" x="20" y="187" width="57" height="20.5"/>
+                                        <rect key="frame" x="20" y="187" width="57" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -95,7 +95,7 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzO-TC-vJg">
-                                        <rect key="frame" x="365" y="187" width="28" height="20.5"/>
+                                        <rect key="frame" x="365" y="187" width="28" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -122,7 +122,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igV-iK-WTZ">
-                                        <rect key="frame" x="20" y="276" width="29.5" height="21"/>
+                                        <rect key="frame" x="20" y="276" width="30" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="6cB-HZ-NaZ"/>
                                             <constraint firstAttribute="width" constant="30" id="C9c-HO-df4"/>
@@ -144,7 +144,7 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7g-iU-v9O">
-                                        <rect key="frame" x="20" y="447" width="29.5" height="21"/>
+                                        <rect key="frame" x="20" y="447" width="30" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="M6v-D9-seq"/>
                                         </constraints>
@@ -184,7 +184,7 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhN-og-dN2">
-                                        <rect key="frame" x="20" y="610" width="29.5" height="21"/>
+                                        <rect key="frame" x="20" y="610" width="30" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="fsH-Bo-8eG"/>
                                         </constraints>
