@@ -53,7 +53,7 @@
 #import "AKRandomDistributionTable.h"
 #import "AKSoundFile.h"
 #import "AKWeightedSumOfSinusoids.h"
-#import "AKWindowsTable.h"
+#import "AKWindow.h"
 
 // Operations - Function Tables - Loopers
 #import "AKFunctionTableLooper.h"
@@ -62,30 +62,23 @@
 
 // Operations - Mathematical Operations
 #import "AKAssignment.h"
-#import "AKScaledControl.h"
-
-// Operations - Mathematical Operations - Mininum and Maximum
-#import "AKMaxAudio.h"
-#import "AKMaxControl.h"
-#import "AKMinAudio.h"
-#import "AKMinControl.h"
-
-// Operations - Mathematical Operations - Mixing
-#import "AKMixedAudio.h"
-#import "AKMixedControl.h"
+#import "AKMaximum.h"
+#import "AKMinimum.h"
+#import "AKMultipleInputMathOperation.h"
 #import "AKProduct.h"
+#import "AKScaledControl.h"
 #import "AKSum.h"
 
 // Operations - Phase Vocoder Streaming
-#import "AKAudioFromFSignal.h"
-#import "AKCrossSynthesis.h"
-#import "AKFSignalFromMonoAudio.h"
-#import "AKFSignalFromMonoWithAttackAnalysis.h"
-#import "AKFSignalMix.h"
+#import "AKCrossSynthesizedFFT.h"
+#import "AKFFT.h"
+#import "AKFFTProcessor.h"
+#import "AKMixedFFT.h"
 #import "AKPhaseLockedVocoder.h"
-#import "AKScaledFSignal.h"
+#import "AKResynthesizedAudio.h"
+#import "AKScaledFFT.h"
 #import "AKSpectralVocoder.h"
-#import "AKWarp.h"
+#import "AKWarpedFFT.h"
 
 // Operations - Signal Generators
 
@@ -97,6 +90,7 @@
 
 // Operations - Signal Generators - Granular Synthesis
 #import "AKGranularSynthesisTexture.h"
+#import "AKGranularSynthesizer.h"
 #import "AKSinusoidBursts.h"
 
 // Operations - Signal Generators - Musical Controls
@@ -132,6 +126,7 @@
 // Operations - Signal Generators - Physical Models - Waveguide
 #import "AKBeatenPlate.h"
 #import "AKBowedString.h"
+#import "AKFlute.h"
 #import "AKSimpleWaveGuideModel.h"
 
 // Operations - Signal Generators - Random Generators
@@ -140,10 +135,8 @@
 #import "AKRandomNumbers.h"
 
 // Operations - Signal Generators - Segment Arrays
-#import "AKExponentialSegmentArray.h"
-#import "AKExponentialSegmentArrayLoop.h"
-#import "AKLinearSegmentArray.h"
-#import "AKLinearSegmentArrayLoop.h"
+#import "AKSegmentArray.h"
+#import "AKSegmentArrayLoop.h"
 
 // Operations - Signal Generators - Subtractive Synthesis
 #import "AKAdditiveCosines.h"
@@ -201,6 +194,7 @@
 
 // Operations - Signal Modifiers - Volume and Spatialization
 #import "AKBalance.h"
+#import "AKMix.h"
 #import "AKPanner.h"
 
 

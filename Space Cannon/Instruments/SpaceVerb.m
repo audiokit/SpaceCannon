@@ -25,7 +25,7 @@
                                                              maximum:0.99];
         [self addProperty:_feedbackLevel];
         
-        AKSum *leftSum = [[AKSum alloc] initWithOperands:
+        AKSum *leftSum = [[AKSum alloc] initWithInputs:
                           softBoing.leftOutput,
                           crunch.leftOutput,
                           pluck.leftOutput,
@@ -34,7 +34,7 @@
                           siren.leftOutput, nil];
         [self connect:leftSum];
         
-        AKSum *rightSum = [[AKSum alloc] initWithOperands:
+        AKSum *rightSum = [[AKSum alloc] initWithInputs:
                            softBoing.rightOutput,
                            crunch.rightOutput,
                            pluck.rightOutput,
@@ -51,13 +51,13 @@
         reverb.feedback = _feedbackLevel;
         [self connect:reverb];
         
-        AKMixedAudio *leftmix = [[AKMixedAudio alloc] initWithSignal1:leftSum
-                                                              signal2:reverb.leftOutput
-                                                              balance:akp(0.5)];
+        AKMix *leftmix = [[AKMix alloc] initWithSignal1:leftSum
+                                                signal2:reverb.leftOutput
+                                                balance:akp(0.5)];
         [self connect:leftmix];
-        AKMixedAudio *rightmix = [[AKMixedAudio alloc] initWithSignal1:rightSum
-                                                               signal2:reverb.rightOutput
-                                                               balance:akp(0.5)];
+        AKMix *rightmix = [[AKMix alloc] initWithSignal1:rightSum
+                                                 signal2:reverb.rightOutput
+                                                 balance:akp(0.5)];
         [self connect:rightmix];
         
         AKAudioOutput *output = [[AKAudioOutput alloc] initWithLeftAudio:leftmix

@@ -77,7 +77,7 @@ static int currentID = 1;
 
 
 // -----------------------------------------------------------------------------
-#  pragma mark - F Tables
+#  pragma mark - Function Tables
 // -----------------------------------------------------------------------------
 
 - (void)addFunctionTable:(AKFunctionTable *)newFunctionTable
@@ -229,6 +229,18 @@ static int currentID = 1;
 {
     note.instrument = self;
     [note playAfterDelay:delay];
+}
+
+- (void)stopNote:(AKNote *)note
+{
+    note.instrument = self;
+    [note stop];
+}
+
+- (void)stopNote:(AKNote *)note afterDelay:(float)delay
+{
+    note.instrument = self;
+    [note stopAfterDelay:delay];
 }
 
 - (void)playPhrase:(AKPhrase *)phrase
